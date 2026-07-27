@@ -33,7 +33,7 @@ export function Footer() {
             <nav aria-label={copy.footer.navigation}>
               <ul className="flex max-w-2xl flex-wrap gap-x-5 gap-y-3 text-sm font-medium text-[#8FA0B5]">
                 {footerLinks.map(([label, to]) => <li key={to}><Link to={to} className="hover:text-brand-700">{label}</Link></li>)}
-                {siteConfig.clientLoginUrl && <li><a href={siteConfig.clientLoginUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 hover:text-brand-700"><LogIn size={15} aria-hidden="true" />{v2.footer.login}</a></li>}
+                <li><a href={siteConfig.clientLoginUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 hover:text-brand-700"><LogIn size={15} aria-hidden="true" />{v2.footer.login}</a></li>
                 {whatsappUrl && <li><a href={whatsappUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 font-semibold text-brand-700 hover:text-brand-600"><MessageCircle size={15} aria-hidden="true" />{v2.footer.whatsapp}</a></li>}
               </ul>
             </nav>

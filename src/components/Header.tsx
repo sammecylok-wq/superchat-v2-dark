@@ -13,7 +13,6 @@ export function Header() {
   const location = useLocation();
   const { copy, currentLanguage } = useLanguage();
   const v2 = v2Content[currentLanguage];
-  const clientLoginEnabled = Boolean(siteConfig.clientLoginUrl);
 
   const links = [
     { label: v2.nav.home, to: "/" },
@@ -69,26 +68,16 @@ export function Header() {
         </nav>
         <div className="hidden shrink-0 items-center gap-3 xl:flex">
           <LanguageSwitcher />
-          {clientLoginEnabled ? (
-            <a
-              href={siteConfig.clientLoginUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label={copy.nav.clientLoginAria}
-              className="btn !min-h-10 !whitespace-nowrap !border !border-[#2878C8] !bg-[#2878C8] !px-4 !py-2 text-sm !text-white shadow-sm hover:!border-[#1E5FA7] hover:!bg-[#1E5FA7] hover:shadow-md focus-visible:ring-[#2878C8]/30"
-            >
-              <LogIn className="size-4" aria-hidden="true" />
-              {copy.nav.clientLogin}
-            </a>
-          ) : (
-            <span
-              aria-disabled="true"
-              className="btn !min-h-10 !whitespace-nowrap !border !border-[#2878C8] !bg-[#2878C8] !px-4 !py-2 text-sm !text-white opacity-50 shadow-sm"
-            >
-              <LogIn className="size-4" aria-hidden="true" />
-              {copy.nav.clientLogin}
-            </span>
-          )}
+          <a
+            href={siteConfig.clientLoginUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label={copy.nav.clientLoginAria}
+            className="btn !min-h-10 !whitespace-nowrap !border !border-[#2878C8] !bg-[#2878C8] !px-4 !py-2 text-sm !text-white shadow-sm hover:!border-[#1E5FA7] hover:!bg-[#1E5FA7] hover:shadow-md focus-visible:ring-[#2878C8]/30"
+          >
+            <LogIn className="size-4" aria-hidden="true" />
+            {copy.nav.clientLogin}
+          </a>
         </div>
         <button
           type="button"
@@ -111,24 +100,17 @@ export function Header() {
               ? <Link key={link.to} to={link.to} className={`${mobileLinkClass} ${isHashLinkActive(link.to) ? activeLinkClass : ""}`} onClick={() => setOpen(false)}>{link.label}</Link>
               : <NavLink key={link.to} to={link.to} end={link.to === "/"} className={({ isActive }) => `${mobileLinkClass} ${isActive ? activeLinkClass : ""}`} onClick={() => setOpen(false)}>{link.label}</NavLink>
             )}
-            {clientLoginEnabled ? (
-              <a
-                href={siteConfig.clientLoginUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label={copy.nav.clientLoginAria}
-                className="btn mt-3 !border !border-[#2878C8] !bg-[#2878C8] !text-white shadow-sm hover:!border-[#1E5FA7] hover:!bg-[#1E5FA7] hover:shadow-md focus-visible:ring-[#2878C8]/30"
-                onClick={() => setOpen(false)}
-              >
-                <LogIn className="size-5" aria-hidden="true" />
-                {copy.nav.clientLogin}
-              </a>
-            ) : (
-              <span aria-disabled="true" className="btn mt-3 !border !border-brand-500 !bg-brand-500 !text-white opacity-50 shadow-sm">
-                <LogIn className="size-5" aria-hidden="true" />
-                {copy.nav.clientLogin}
-              </span>
-            )}
+            <a
+              href={siteConfig.clientLoginUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={copy.nav.clientLoginAria}
+              className="btn mt-3 !border !border-[#2878C8] !bg-[#2878C8] !text-white shadow-sm hover:!border-[#1E5FA7] hover:!bg-[#1E5FA7] hover:shadow-md focus-visible:ring-[#2878C8]/30"
+              onClick={() => setOpen(false)}
+            >
+              <LogIn className="size-5" aria-hidden="true" />
+              {copy.nav.clientLogin}
+            </a>
           </div>
         </nav>
       )}
