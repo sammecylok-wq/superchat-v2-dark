@@ -1,10 +1,6 @@
-const clientLoginUrl = import.meta.env.VITE_CLIENT_LOGIN_URL?.trim() ?? "";
-
-if (import.meta.env.DEV && !clientLoginUrl) {
-  console.warn(
-    "VITE_CLIENT_LOGIN_URL is not configured. The client login link is disabled.",
-  );
-}
+const clientLoginUrl =
+  import.meta.env.VITE_CLIENT_LOGIN_URL?.trim() ||
+  "https://superchat-client-dashboard-v1.pages.dev/login";
 
 export const siteConfig = {
   brandName: "SuperChat Marketing",
