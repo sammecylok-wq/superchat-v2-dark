@@ -15,7 +15,9 @@ export function Brand({ size = "header" }: BrandProps) {
   const { copy } = useLanguage();
   const linkClass = size === "header"
     ? "inline-flex shrink-0 items-center rounded-md focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-brand-500/25"
-    : "inline-flex shrink-0 items-center rounded-xl border border-white/10 bg-white/95 px-2.5 py-1.5 shadow-sm focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-brand-100";
+    : size === "footer"
+      ? "inline-flex shrink-0 items-center rounded-lg py-2 pr-4 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-[#2563EB]/25"
+      : "inline-flex shrink-0 items-center rounded-xl border border-white/10 bg-white/95 px-2.5 py-1.5 shadow-sm focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-brand-100";
 
   return (
     <Link

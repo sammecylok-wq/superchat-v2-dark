@@ -21,25 +21,25 @@ export function Footer() {
   ];
 
   return (
-    <footer className="border-t border-[#213953] bg-[#040A12] pb-24 pt-14 text-[#EAF1F8] sm:pb-14">
+    <footer className="border-t border-[#E5E7EB] bg-[#F8FAFC] py-12 text-[#4B5563] sm:py-16 lg:pb-16 lg:pt-20">
       <div className="container-site">
-        <div className="grid gap-10 lg:grid-cols-[1fr_1.3fr] lg:items-start">
+        <div className="grid gap-12 lg:grid-cols-[1fr_1.3fr] lg:items-start lg:gap-16">
           <div>
             <Brand size="footer" />
-            <p className="mt-5 max-w-md text-base font-semibold leading-7 text-navy">{v2.footer.tagline}</p>
-            {import.meta.env.DEV && <span className="mt-4 inline-flex rounded-full border border-[#29435F] bg-[#101F33] px-3 py-1 text-xs font-bold text-[#8FC4F2]">{v2.footer.preview}</span>}
+            <p className="mt-6 max-w-md text-base font-bold leading-7 text-[#111827]">{v2.footer.tagline}</p>
+            {import.meta.env.DEV && <span className="mt-4 inline-flex rounded-full border border-[#BFDBFE] bg-[#EFF6FF] px-3 py-1 text-xs font-bold text-[#1D4ED8]">{v2.footer.preview}</span>}
           </div>
           <div className="lg:justify-self-end">
             <nav aria-label={copy.footer.navigation}>
-              <ul className="flex max-w-2xl flex-wrap gap-x-5 gap-y-3 text-sm font-medium text-[#8FA0B5]">
-                {footerLinks.map(([label, to]) => <li key={to}><Link to={to} className="hover:text-brand-700">{label}</Link></li>)}
-                <li><a href={siteConfig.clientLoginUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 hover:text-brand-700"><LogIn size={15} aria-hidden="true" />{v2.footer.login}</a></li>
-                {whatsappUrl && <li><a href={whatsappUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 font-semibold text-brand-700 hover:text-brand-600"><MessageCircle size={15} aria-hidden="true" />{v2.footer.whatsapp}</a></li>}
+              <ul className="flex max-w-2xl flex-wrap gap-x-5 gap-y-3 text-sm font-medium text-[#374151]">
+                {footerLinks.map(([label, to]) => <li key={to}><Link to={to} className="rounded-sm transition-colors duration-200 hover:text-[#2563EB] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#2563EB]/30">{label}</Link></li>)}
+                <li><a href={siteConfig.clientLoginUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 rounded-sm transition-colors duration-200 hover:text-[#2563EB] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#2563EB]/30"><LogIn size={15} aria-hidden="true" />{v2.footer.login}</a></li>
+                {whatsappUrl && <li><a href={whatsappUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 rounded-sm font-semibold text-[#2563EB] transition-colors duration-200 hover:text-[#1D4ED8] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#2563EB]/30"><MessageCircle size={15} aria-hidden="true" />{v2.footer.whatsapp}</a></li>}
               </ul>
             </nav>
           </div>
         </div>
-        <div className="mt-10 border-t border-[#213953] pt-6 text-xs leading-5 text-[#8FA0B5]">
+        <div className="mt-12 border-t border-[#E5E7EB] pt-6 text-xs leading-5 text-[#6B7280]">
           <p>© {new Date().getFullYear()} {copy.footer.rights}</p>
         </div>
       </div>
