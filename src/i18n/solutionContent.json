@@ -1,0 +1,311 @@
+{
+  "zh": {
+    "appointment-booking": {
+      "path": "/solutions/appointment-booking",
+      "navLabel": "自动预约",
+      "relatedIntro": "预约流程通常会结合客户筛选、FAQ 回复和需要员工确认的人工接手。",
+      "seo": {
+        "title": "WhatsApp 自动预约系统（马来西亚）| SuperChat Marketing",
+        "description": "了解 SuperChat 如何根据企业的日期、时段和业务规则，通过 WhatsApp 收集预约资料、确认预约，并在需要时通知员工。",
+        "primaryKeyword": "WhatsApp appointment booking automation"
+      },
+      "hero": {
+        "eyebrow": "Appointment Booking",
+        "title": "通过 WhatsApp 引导客户完成预约",
+        "intro": "SuperChat 可根据企业确认的服务、日期、时段和预约规则，收集客户资料并推进预约流程。"
+      },
+      "problem": {
+        "title": "预约询问容易卡在重复确认",
+        "intro": "客户经常分开询问日期、时间、服务和空档；员工需要来回确认，繁忙时也容易遗漏资料。",
+        "items": [
+          { "title": "资料不完整", "text": "客户只发送日期或一句“要预约”，员工仍需逐项追问。" },
+          { "title": "回复不一致", "text": "不同员工可能使用不同的时段、服务和确认方式。" },
+          { "title": "需要人工判断", "text": "特殊时段、临时要求或规则以外的预约仍需要员工确认。" }
+        ]
+      },
+      "how": {
+        "title": "预约流程怎样运作",
+        "intro": "实际步骤会按企业现有预约规则配置。",
+        "steps": [
+          { "title": "识别预约需求", "text": "判断客户想预约的服务或咨询项目。" },
+          { "title": "收集日期与时间", "text": "按顺序询问日期、时段及必要资料。" },
+          { "title": "应用业务规则", "text": "依据已确认的营业时间、可预约条件和流程继续。" },
+          { "title": "输出预约确认", "text": "整理预约资料并向客户说明已确认或待员工确认的状态。" },
+          { "title": "记录或通知", "text": "在已配置的情况下，连接日历、记录工具或负责人通知。" }
+        ]
+      },
+      "benefits": {
+        "title": "企业可以获得什么",
+        "items": [
+          { "title": "一致收集资料", "text": "每次预约按同一组必要问题进行。" },
+          { "title": "减少重复追问", "text": "系统逐步引导客户提供所需资料。" },
+          { "title": "清楚预约状态", "text": "区分已确认、等待资料和需要员工确认。" },
+          { "title": "支持后续提醒", "text": "可按项目范围加入确认或跟进流程。" }
+        ]
+      },
+      "human": {
+        "title": "什么时候由 AI 处理，什么时候交给员工",
+        "intro": "自动预约的目标是处理标准步骤，不是移除企业的最终决定权。",
+        "aiTitle": "AI 可以处理",
+        "aiItems": ["常见服务与预约问题", "标准日期、时段和资料收集", "根据已批准规则继续流程"],
+        "staffTitle": "员工需要处理",
+        "staffItems": ["规则以外的时段或特殊要求", "需要检查真实空档或资源的情况", "投诉、紧急情况或客户要求真人"]
+      },
+      "demo": {
+        "title": "在 Demo 中查看真实预约流程",
+        "text": "Demo 会展示客户提出预约需求后，系统如何收集日期、时间和资料，并输出预约确认或交给员工处理。",
+        "videoSrc": "/videos/demo-03-booking.mp4",
+        "videoTitle": "自动预约流程 Demo"
+      },
+      "faq": {
+        "title": "自动预约常见问题",
+        "items": [
+          { "q": "系统会自行决定所有预约时间吗？", "a": "不会。系统只依据企业确认的可预约条件和连接资料处理；需要人工判断的时段会转交员工。" },
+          { "q": "可以连接 Google Calendar 吗？", "a": "可以按项目范围和账号权限评估连接。实施前会确认日历结构、读写权限和冲突处理方式。" },
+          { "q": "客户资料不完整怎么办？", "a": "系统可以继续询问缺少的日期、时段、服务或联络资料，再决定是否进入确认步骤。" },
+          { "q": "客户可以改期或取消吗？", "a": "可以建立改期或取消流程，但实际规则、通知对象和最终确认方式需由企业批准。" },
+          { "q": "预约完成后会通知负责人吗？", "a": "在已配置负责人通知的项目中可以。通知内容与触发条件会按企业流程设定。" },
+          { "q": "适合哪些预约型企业？", "a": "适合经常通过消息确认服务、日期和时间的企业，例如美容、教育、专业服务及其他预约制业务。" },
+          { "q": "开始设置需要提供什么？", "a": "通常需要服务项目、营业时间、预约规则、所需客户资料、改期方式和人工接手条件。" }
+        ]
+      },
+      "cta": { "title": "查看自动预约是否适合你的流程", "text": "先通过真实 Demo 了解流程，再由顾问确认企业规则和连接范围。", "primary": "预约 Demo", "secondary": "联系我们" }
+    },
+    "lead-qualification": {
+      "path": "/solutions/lead-qualification",
+      "navLabel": "客户筛选",
+      "relatedIntro": "筛选后的客户可以继续进入 FAQ、预约或人工跟进，因此需要与其他流程清楚衔接。",
+      "seo": {
+        "title": "WhatsApp 客户筛选自动化 | SuperChat Marketing",
+        "description": "了解 SuperChat 如何通过 WhatsApp 收集客户需求、预算、时间和业务资料，协助企业筛选潜在客户并通知负责人。",
+        "primaryKeyword": "WhatsApp lead qualification"
+      },
+      "hero": { "eyebrow": "Lead Qualification", "title": "通过 WhatsApp 有顺序地筛选客户需求", "intro": "SuperChat 可按企业批准的问题收集客户需求、条件和联络资料，再把清楚的客户状态交给负责人。" },
+      "problem": {
+        "title": "大量询问不一定具备相同优先级",
+        "intro": "如果每位客户都由员工从头询问，真正适合的客户可能等待太久，负责人也难以快速了解当前需求。",
+        "items": [
+          { "title": "需求不清楚", "text": "客户第一条消息通常没有说明完整目标、预算或时间。" },
+          { "title": "筛选方式不一致", "text": "不同员工可能询问不同问题，导致资料难以比较。" },
+          { "title": "交接缺少上下文", "text": "负责人接手时仍需重新询问客户已经提供过的资料。" }
+        ]
+      },
+      "how": {
+        "title": "客户筛选怎样运作",
+        "intro": "问题顺序和筛选条件会按企业真实销售流程设置。",
+        "steps": [
+          { "title": "理解初步需求", "text": "识别客户咨询的服务、产品或问题类型。" },
+          { "title": "询问必要条件", "text": "收集预算、地点、时间、数量或其他企业指定资料。" },
+          { "title": "整理客户状态", "text": "根据已批准规则标记资料完整度和下一步。" },
+          { "title": "引导行动", "text": "适合的客户可进入预约、报价准备或其他后续流程。" },
+          { "title": "通知负责人", "text": "需要人工判断或高优先级的情况交给员工继续处理。" }
+        ]
+      },
+      "benefits": {
+        "title": "更清楚地处理潜在客户",
+        "items": [
+          { "title": "统一筛选问题", "text": "每位客户按相同业务条件提供资料。" },
+          { "title": "减少重复询问", "text": "负责人接手前已经看到客户提供的上下文。" },
+          { "title": "明确下一步", "text": "区分继续预约、等待资料或需要人工判断。" },
+          { "title": "保留人工决定", "text": "系统协助整理，不替代销售人员的最终判断。" }
+        ]
+      },
+      "human": {
+        "title": "筛选不是自动拒绝客户",
+        "intro": "AI 负责收集和整理资料；企业员工仍决定优先级、报价、资格和最终跟进方式。",
+        "aiTitle": "AI 可以处理",
+        "aiItems": ["标准需求和资料收集", "常见问题与下一步引导", "根据已批准规则整理状态"],
+        "staffTitle": "员工需要处理",
+        "staffItems": ["复杂需求、价格谈判或报价", "资格边界不清楚的客户", "客户要求真人或需要专业判断"]
+      },
+      "demo": { "title": "在 Demo 中查看客户筛选流程", "text": "Demo 会展示客户提出问题后，系统如何回答 FAQ、继续询问需求、整理资料，并把需要人工处理的情况交给负责人。", "videoSrc": "/videos/demo-01-faq-screening.mp4", "videoTitle": "客户需求筛选 Demo" },
+      "faq": {
+        "title": "客户筛选常见问题",
+        "items": [
+          { "q": "系统会自动拒绝不符合条件的客户吗？", "a": "默认不应自动作出未经企业批准的拒绝决定。系统可以收集和整理资料，再由企业设定下一步。" },
+          { "q": "可以询问预算、地点和时间吗？", "a": "可以，只要这些问题属于企业批准的筛选流程，并符合适用的隐私与资料处理要求。" },
+          { "q": "客户中途提出 FAQ 怎么办？", "a": "系统可以在回答已批准的常见问题后，继续当前未完成的筛选步骤。" },
+          { "q": "筛选结果可以记录在哪里？", "a": "可按项目范围评估记录到表格、CRM 或其他获准流程；实际连接取决于平台权限。" },
+          { "q": "员工什么时候收到通知？", "a": "企业可以设定通知条件，例如资料完成、客户要求真人或出现需要判断的特殊情况。" },
+          { "q": "客户资料会不会被重复询问？", "a": "流程会尽量使用当前对话中已取得的资料，但实际表现取决于确认的字段与工作流程。" },
+          { "q": "开始设置需要哪些资料？", "a": "需要企业的客户资格条件、必问问题、禁止自动判断的范围、下一步和人工接手规则。" }
+        ]
+      },
+      "cta": { "title": "整理适合你企业的客户筛选流程", "text": "通过 Demo 查看筛选与人工接手，再确认需要收集的资料和下一步。", "primary": "预约 Demo", "secondary": "联系我们" }
+    },
+    "human-takeover": {
+      "path": "/solutions/human-takeover",
+      "navLabel": "人工接手",
+      "relatedIntro": "人工接手为客服、筛选和预约流程提供企业判断与例外处理的安全边界。",
+      "seo": {
+        "title": "AI 客服人工接手流程 | SuperChat Marketing",
+        "description": "了解 SuperChat 如何让 AI 处理标准客户询问，并在客户要求真人、出现特殊情况或需要企业判断时通知员工接手。",
+        "primaryKeyword": "chatbot human takeover"
+      },
+      "hero": { "eyebrow": "Human Takeover", "title": "让 AI 处理标准流程，让员工接手需要判断的对话", "intro": "SuperChat 可按企业设定的条件停止或暂停自动流程、通知负责人，并保留对话上下文供员工继续处理；实际接手方式取决于平台权限和项目配置。" },
+      "problem": {
+        "title": "不是每个客户问题都适合自动处理",
+        "intro": "复杂要求、投诉、谈判和敏感情况需要企业人员判断；如果没有清楚交接规则，自动化可能让客户重复说明问题。",
+        "items": [
+          { "title": "缺少接手条件", "text": "系统不知道哪些话题必须停止自动流程。" },
+          { "title": "负责人没有收到通知", "text": "需要人工处理的对话可能继续等待。" },
+          { "title": "交接后失去上下文", "text": "员工接手时看不到客户已经提供的需求和资料。" }
+        ]
+      },
+      "how": {
+        "title": "人工接手怎样运作",
+        "intro": "企业先定义哪些情况可以自动处理，哪些情况必须交给员工。",
+        "steps": [
+          { "title": "处理标准询问", "text": "AI 依据企业批准的 FAQ 和流程回答。" },
+          { "title": "识别接手信号", "text": "客户要求真人、出现特殊话题或达到企业设定条件。" },
+          { "title": "整理当前上下文", "text": "保留已收集的需求、资料和未完成步骤。" },
+          { "title": "通知负责人", "text": "通过已配置的渠道提醒适合的员工。" },
+          { "title": "员工继续处理", "text": "员工根据上下文作出判断并继续客户对话。" }
+        ]
+      },
+      "benefits": {
+        "title": "自动化与人工控制同时保留",
+        "items": [
+          { "title": "清楚责任边界", "text": "企业决定 AI 和员工各自负责的范围。" },
+          { "title": "减少客户重复说明", "text": "员工接手时可使用已取得的对话上下文。" },
+          { "title": "特殊情况更快发现", "text": "根据规则通知负责人处理。" },
+          { "title": "保持企业控制", "text": "价格、承诺、投诉和专业判断继续由员工负责。" }
+        ]
+      },
+      "human": {
+        "title": "建议的 AI 与员工分工",
+        "intro": "接手规则应按企业风险、服务范围和团队职责建立。",
+        "aiTitle": "AI 可以处理",
+        "aiItems": ["已批准的 FAQ", "标准资料收集", "明确且重复的流程步骤"],
+        "staffTitle": "员工需要处理",
+        "staffItems": ["投诉、退款、争议或紧急情况", "价格谈判与特殊承诺", "专业意见、例外审批和客户主动要求真人"]
+      },
+      "demo": { "title": "在 Demo 中查看交接点", "text": "Demo 会说明系统在标准对话中如何继续流程，以及当客户要求真人或出现特殊情况时，怎样保留上下文并通知员工。", "videoSrc": "", "videoTitle": "人工接手流程 Demo" },
+      "faq": {
+        "title": "人工接手常见问题",
+        "items": [
+          { "q": "客户可以直接要求真人吗？", "a": "可以。企业可把明确的真人请求设为接手条件，并通知适合的员工。" },
+          { "q": "接手后 AI 会继续回复吗？", "a": "行为取决于批准的接手规则。通常应暂停相关自动流程，避免 AI 与员工同时回复。" },
+          { "q": "员工可以看到之前的对话吗？", "a": "交接设计应保留必要的对话上下文和已收集资料；实际显示方式取决于所使用的平台。" },
+          { "q": "哪些情况应该交给员工？", "a": "常见情况包括投诉、退款、特殊价格、紧急问题、专业判断和客户主动要求真人。" },
+          { "q": "可以通知不同部门吗？", "a": "可以按项目范围设计路由条件，但需要企业提供部门职责、通知渠道和处理规则。" },
+          { "q": "系统会代替全部客服员工吗？", "a": "不会。目标是处理标准重复步骤，让员工集中处理需要判断、同理心或业务授权的情况。" },
+          { "q": "怎样开始设计接手规则？", "a": "先列出不可自动处理的话题、负责人、通知渠道、响应方式和重新启用自动流程的条件。" }
+        ]
+      },
+      "cta": { "title": "设计清楚的 AI 与人工分工", "text": "预约 Demo，查看标准流程与人工接手怎样在同一客户对话中配合。", "primary": "预约 Demo", "secondary": "联系我们" }
+    },
+    "ai-customer-service": {
+      "path": "/solutions/ai-customer-service",
+      "navLabel": "AI 客服",
+      "relatedIntro": "AI 客服回答常见问题后，可以按配置继续筛选、预约或在超出范围时交给员工。",
+      "seo": {
+        "title": "马来西亚 AI 客服自动化 | SuperChat Marketing",
+        "description": "SuperChat 帮助马来西亚企业根据已批准的 FAQ、服务和业务流程处理常见 WhatsApp 客户询问，并支持人工接手。",
+        "primaryKeyword": "AI customer service Malaysia"
+      },
+      "hero": { "eyebrow": "AI Customer Service", "title": "根据企业真实资料处理常见客户询问", "intro": "SuperChat 可使用企业确认的 FAQ、服务、价格和流程回答常见问题，并把需要判断的情况交给员工。" },
+      "problem": {
+        "title": "重复询问占用员工处理重要问题的时间",
+        "intro": "客户经常在不同时间询问相同的服务、价格和流程。如果资料分散或回复标准不一致，客户和员工都需要更多来回沟通。",
+        "items": [
+          { "title": "常见问题重复出现", "text": "员工每天多次回答相同的服务与流程问题。" },
+          { "title": "回复内容不一致", "text": "资料更新后，不同员工可能仍使用旧答案。" },
+          { "title": "复杂问题混在一起", "text": "标准 FAQ 和需要判断的情况没有清楚分流。" }
+        ]
+      },
+      "how": {
+        "title": "AI 客服怎样运作",
+        "intro": "系统只使用企业整理和批准的资料范围。",
+        "steps": [
+          { "title": "整理企业资料", "text": "确认 FAQ、服务、价格、规则和不可自动回答的范围。" },
+          { "title": "理解客户问题", "text": "判断问题对应的已批准资料或流程。" },
+          { "title": "提供相关回复", "text": "使用企业内容回答并说明适合的下一步。" },
+          { "title": "继续业务流程", "text": "在适用时进入客户筛选、预约或资料收集。" },
+          { "title": "必要时人工接手", "text": "超出范围、特殊情况或客户要求真人时通知员工。" }
+        ]
+      },
+      "benefits": {
+        "title": "建立更一致的客户服务入口",
+        "items": [
+          { "title": "常见问题及时处理", "text": "客户可先获得企业批准的基础信息。" },
+          { "title": "回复标准更一致", "text": "内容围绕同一组已确认资料建立。" },
+          { "title": "连接下一步", "text": "回答后可继续筛选、预约或收集资料。" },
+          { "title": "保留人工判断", "text": "复杂、敏感和例外情况交给员工。" }
+        ]
+      },
+      "human": {
+        "title": "AI 客服应有清楚的回答边界",
+        "intro": "系统帮助处理标准信息，不应自行作出企业没有批准的承诺或专业判断。",
+        "aiTitle": "AI 可以处理",
+        "aiItems": ["已批准的服务和 FAQ", "标准流程说明", "客户资料和下一步引导"],
+        "staffTitle": "员工需要处理",
+        "staffItems": ["特殊价格、退款和投诉", "医疗、法律、财务等专业或高风险建议", "资料不足、规则冲突或客户要求真人"]
+      },
+      "demo": { "title": "在 Demo 中查看真实 FAQ 回复", "text": "Demo 会展示客户提出问题后，系统怎样根据企业资料回复、继续未完成的流程，并在需要时进入预约或通知员工。", "videoSrc": "/videos/faq-live-demo.mp4", "videoTitle": "真实 AI 客服 FAQ Demo" },
+      "faq": {
+        "title": "AI 客服常见问题",
+        "items": [
+          { "q": "系统从哪里取得回答内容？", "a": "回答范围来自企业提供并确认的 FAQ、服务、价格、政策和业务规则。" },
+          { "q": "如果资料中没有答案怎么办？", "a": "系统应说明无法确认，并按企业设定询问更多资料或转交员工，而不是自行编造答案。" },
+          { "q": "可以更新 FAQ 和服务资料吗？", "a": "可以。企业资料改变时应同步审核和更新相关内容，再进行测试。" },
+          { "q": "AI 客服支持哪些语言？", "a": "可按企业批准内容配置中文、英文和 Bahasa Malaysia；实际语言范围应在项目中确认。" },
+          { "q": "回答 FAQ 后可以继续预约吗？", "a": "可以在已配置的流程中继续客户筛选、资料收集或预约，而不是回答后结束对话。" },
+          { "q": "员工可以随时介入吗？", "a": "可以设计人工接手条件，让员工在客户请求或特殊情况出现时继续处理。" },
+          { "q": "这会完全取代客服团队吗？", "a": "不会。系统适合处理标准重复内容，员工继续负责判断、同理心、例外和企业授权事项。" }
+        ]
+      },
+      "cta": { "title": "查看 AI 客服怎样配合你的真实资料", "text": "先看 FAQ Demo，再由顾问了解内容范围、流程和人工接手规则。", "primary": "预约 Demo", "secondary": "联系我们" }
+    }
+  },
+  "en": {
+    "appointment-booking": {
+      "path": "/solutions/appointment-booking", "navLabel": "Appointment Booking", "relatedIntro": "Booking workflows commonly connect with qualification, FAQ responses and staff confirmation for exceptions.",
+      "seo": { "title": "WhatsApp Appointment Booking Automation Malaysia | SuperChat", "description": "See how SuperChat collects booking details, applies approved availability rules and confirms or escalates WhatsApp appointment requests for Malaysian businesses.", "primaryKeyword": "WhatsApp appointment booking automation" },
+      "hero": { "eyebrow": "Appointment Booking", "title": "Guide customers through appointment booking on WhatsApp", "intro": "SuperChat can collect service, date, time and customer details according to booking rules approved by the business." },
+      "problem": { "title": "Booking enquiries often stall during repeated confirmation", "intro": "Customers may send dates, times and service requests separately. Staff then repeat questions and may miss information during busy periods.", "items": [{"title":"Incomplete details","text":"A customer may only send a preferred date or say they want to book."},{"title":"Inconsistent handling","text":"Different staff may follow different availability and confirmation steps."},{"title":"Human decisions remain","text":"Exceptions and requests outside approved rules still require staff confirmation."}] },
+      "how": { "title": "How the booking workflow works", "intro": "The final steps are configured around the business's existing booking rules.", "steps": [{"title":"Identify booking intent","text":"Determine the service or consultation the customer wants."},{"title":"Collect date and time","text":"Ask for the preferred date, time and required customer details."},{"title":"Apply business rules","text":"Continue using approved opening hours and booking conditions."},{"title":"Provide a booking status","text":"Explain whether the request is confirmed or waiting for staff approval."},{"title":"Record or notify","text":"Where configured, connect a calendar, record or staff notification."}] },
+      "benefits": { "title": "What the business gains", "items": [{"title":"Consistent data collection","text":"Each booking follows the same required questions."},{"title":"Fewer repeated questions","text":"Customers are guided to provide missing details."},{"title":"Clear booking status","text":"Separate confirmed, incomplete and staff-review requests."},{"title":"Support for reminders","text":"Confirmation or follow-up can be added within project scope."}] },
+      "human": { "title": "When AI handles the process and when staff step in", "intro": "Booking automation handles standard steps without removing the business's final control.", "aiTitle":"AI can handle", "aiItems":["Common service and booking questions","Standard date, time and data collection","Steps covered by approved rules"], "staffTitle":"Staff should handle", "staffItems":["Exceptions and special time requests","Cases requiring live availability checks","Complaints, urgent cases or requests for a person"] },
+      "demo": { "title":"See a real booking flow in the demo", "text":"The demo shows how the system collects dates, times and customer details, then confirms the booking status or hands it to staff.", "videoSrc":"/videos/demo-03-booking.mp4", "videoTitle":"Appointment booking workflow demo" },
+      "faq": { "title":"Appointment booking questions", "items":[{"q":"Does the system decide every available time on its own?","a":"No. It follows approved booking conditions and connected information. Exceptions should be sent to staff."},{"q":"Can it connect with Google Calendar?","a":"A connection can be assessed within project scope and account permissions. Calendar structure, access and conflict handling must be confirmed first."},{"q":"What happens when details are incomplete?","a":"The system can ask for the missing service, date, time or contact details before moving forward."},{"q":"Can customers reschedule or cancel?","a":"Rescheduling and cancellation workflows can be configured using rules and notification steps approved by the business."},{"q":"Can staff be notified after a booking?","a":"Yes, where staff notification is part of the configured project and the trigger conditions are defined."},{"q":"Which businesses is this suitable for?","a":"It suits businesses that regularly confirm services, dates and times through messaging."},{"q":"What information is needed to get started?","a":"Usually services, opening hours, booking rules, required customer details, rescheduling steps and takeover conditions."}] },
+      "cta": { "title":"See whether automated booking fits your workflow", "text":"Review the real demo first, then confirm the business rules and connection scope with a consultant.", "primary":"Book Demo", "secondary":"Contact Us" }
+    },
+    "lead-qualification": {
+      "path":"/solutions/lead-qualification", "navLabel":"Lead Qualification", "relatedIntro":"Qualified enquiries can continue to FAQs, booking or staff follow-up, so these workflows need clear connections.",
+      "seo":{"title":"WhatsApp Lead Qualification Automation | SuperChat","description":"See how SuperChat collects customer needs, budget, timing and business details on WhatsApp before staff continue with qualified context.","primaryKeyword":"WhatsApp lead qualification"},
+      "hero":{"eyebrow":"Lead Qualification","title":"Qualify customer needs through a structured WhatsApp conversation","intro":"SuperChat can collect approved customer requirements and conditions, then pass a clear lead status and context to staff."},
+      "problem":{"title":"Not every enquiry has the same context or priority","intro":"When staff qualify every enquiry from the beginning, suitable leads may wait and handovers may lack the information needed for the next step.","items":[{"title":"Unclear requirements","text":"The first message rarely includes the full need, budget or timeline."},{"title":"Inconsistent questions","text":"Different staff may collect different information."},{"title":"Context is lost","text":"The person taking over may need to repeat questions already answered."}]},
+      "how":{"title":"How lead qualification works","intro":"Questions and conditions are configured around the business's real sales process.","steps":[{"title":"Understand the initial need","text":"Identify the service, product or problem being discussed."},{"title":"Ask for required conditions","text":"Collect budget, location, timing, quantity or other approved details."},{"title":"Organise the lead status","text":"Use approved rules to identify missing information and the next step."},{"title":"Guide the next action","text":"Continue to booking, quotation preparation or another approved process."},{"title":"Notify staff","text":"Pass exceptions and cases requiring judgement to the responsible team."}]},
+      "benefits":{"title":"Handle leads with clearer context","items":[{"title":"Consistent questions","text":"Each lead is assessed using the same business conditions."},{"title":"Less repetition","text":"Staff receive the context already provided by the customer."},{"title":"Clear next steps","text":"Separate booking, missing information and staff-review cases."},{"title":"Human decisions remain","text":"The system organises information without replacing sales judgement."}]},
+      "human":{"title":"Qualification is not automatic rejection","intro":"AI collects and organises information; staff still decide priority, pricing, eligibility and the final follow-up.","aiTitle":"AI can handle","aiItems":["Standard requirements and data collection","Approved FAQs and next-step guidance","Organising status with approved rules"],"staffTitle":"Staff should handle","staffItems":["Complex requirements and price negotiation","Unclear qualification boundaries","Requests for a person or professional judgement"]},
+      "demo":{"title":"See lead qualification in the demo","text":"The demo shows how the system answers an FAQ, continues asking about the need and passes cases requiring staff attention with context.","videoSrc":"/videos/demo-01-faq-screening.mp4","videoTitle":"Lead qualification workflow demo"},
+      "faq":{"title":"Lead qualification questions","items":[{"q":"Will the system automatically reject unsuitable customers?","a":"It should not make unapproved rejection decisions. It can collect and organise information before the business determines the next step."},{"q":"Can it ask about budget, location and timing?","a":"Yes, when those questions belong to an approved qualification flow and comply with applicable data-handling requirements."},{"q":"What if a customer asks an FAQ midway through qualification?","a":"The system can answer an approved question and then continue the unfinished qualification step."},{"q":"Where can lead status be recorded?","a":"Recording in a spreadsheet, CRM or another approved workflow can be assessed within scope and platform permissions."},{"q":"When are staff notified?","a":"Triggers can include completed details, a request for a person or a special case requiring judgement."},{"q":"Will customers be asked for the same details repeatedly?","a":"The workflow should reuse information collected in the current conversation where configured."},{"q":"What is needed to configure qualification?","a":"The business needs to define qualification conditions, required questions, decision boundaries, next steps and takeover rules."}]},
+      "cta":{"title":"Define a practical lead qualification flow","text":"See qualification and human takeover in the demo, then confirm the information and next steps your business needs.","primary":"Book Demo","secondary":"Contact Us"}
+    },
+    "human-takeover": {
+      "path":"/solutions/human-takeover", "navLabel":"Human Takeover", "relatedIntro":"Human takeover provides a controlled boundary for judgement and exceptions across service, qualification and booking workflows.",
+      "seo":{"title":"Chatbot Human Takeover Workflow | SuperChat Marketing","description":"Learn how SuperChat handles standard enquiries and notifies staff to take over when customers request a person or a case needs business judgement.","primaryKeyword":"chatbot human takeover"},
+      "hero":{"eyebrow":"Human Takeover","title":"Let AI handle standard steps and staff take over decisions","intro":"SuperChat can pause an automated flow, notify the responsible person and preserve conversation context when a defined takeover condition is reached. The exact takeover method depends on platform permissions and project configuration."},
+      "problem":{"title":"Not every customer situation should be automated","intro":"Complaints, negotiation, exceptions and sensitive situations need staff judgement. Without clear handover rules, customers may need to repeat themselves.","items":[{"title":"No takeover boundary","text":"The system does not know which topics must stop automation."},{"title":"Staff are not alerted","text":"Conversations requiring attention continue to wait."},{"title":"Context is lost","text":"Staff cannot see the need and details already collected."}]},
+      "how":{"title":"How human takeover works","intro":"The business first defines which situations AI may handle and which require staff.","steps":[{"title":"Handle standard enquiries","text":"AI follows approved FAQs and workflow steps."},{"title":"Detect a takeover signal","text":"A customer requests a person or reaches a defined exception."},{"title":"Preserve current context","text":"Keep the collected need, details and unfinished step."},{"title":"Notify the responsible person","text":"Alert the appropriate team through a configured channel."},{"title":"Staff continue","text":"A team member uses the context and continues the conversation."}]},
+      "benefits":{"title":"Keep automation and human control together","items":[{"title":"Clear responsibility","text":"The business decides what AI and staff each handle."},{"title":"Less repetition","text":"Staff can use the context collected before takeover."},{"title":"Exceptions are visible","text":"Defined cases can notify the responsible person."},{"title":"Business control remains","text":"Pricing, commitments and judgement stay with staff."}]},
+      "human":{"title":"A practical division between AI and staff","intro":"Takeover rules should reflect business risk, service scope and team responsibility.","aiTitle":"AI can handle","aiItems":["Approved FAQs","Standard data collection","Clear and repeated workflow steps"],"staffTitle":"Staff should handle","staffItems":["Complaints, refunds, disputes or urgent cases","Negotiation and special commitments","Professional judgement, exceptions and direct requests for a person"]},
+      "demo":{"title":"See the handover point in a demo","text":"The demo explains how standard conversations continue and how context and staff notification are handled when a customer requests a person or an exception appears.","videoSrc":"","videoTitle":"Human takeover workflow demo"},
+      "faq":{"title":"Human takeover questions","items":[{"q":"Can customers ask for a person directly?","a":"Yes. A clear request for a person can be configured as a takeover condition."},{"q":"Will AI continue replying after takeover?","a":"That depends on approved rules. The relevant automated flow should normally pause to avoid simultaneous replies."},{"q":"Can staff see the previous conversation?","a":"The handover design should preserve necessary context and collected data, subject to the platform used."},{"q":"Which cases should go to staff?","a":"Typical cases include complaints, refunds, special pricing, urgent issues, professional judgement and direct human requests."},{"q":"Can different departments be notified?","a":"Routing can be designed within scope when the business defines responsibilities, notification channels and handling rules."},{"q":"Does this replace the whole customer service team?","a":"No. It handles standard repeated steps while staff remain responsible for judgement, empathy, exceptions and authorised decisions."},{"q":"How do we start defining takeover rules?","a":"List topics AI must not handle, responsible staff, notification channels, response steps and conditions for resuming automation."}]},
+      "cta":{"title":"Define a clear division between AI and staff","text":"Book a demo to see standard automation and human takeover working within one customer conversation.","primary":"Book Demo","secondary":"Contact Us"}
+    },
+    "ai-customer-service": {
+      "path":"/solutions/ai-customer-service", "navLabel":"AI Customer Service", "relatedIntro":"After answering common questions, AI customer service can continue to qualification, booking or staff takeover where configured.",
+      "seo":{"title":"AI Customer Service Automation Malaysia | SuperChat","description":"SuperChat helps Malaysian businesses answer common WhatsApp enquiries using approved FAQs, services and workflows while supporting human takeover.","primaryKeyword":"AI customer service Malaysia"},
+      "hero":{"eyebrow":"AI Customer Service","title":"Handle common customer enquiries using approved business information","intro":"SuperChat can answer from confirmed FAQs, services, prices and workflows, then pass situations requiring judgement to staff."},
+      "problem":{"title":"Repeated enquiries take time away from important cases","intro":"Customers ask the same service, price and process questions at different times. Scattered information and inconsistent answers create extra back-and-forth.","items":[{"title":"Repeated FAQs","text":"Staff answer the same service and process questions each day."},{"title":"Inconsistent answers","text":"Different team members may continue using outdated information."},{"title":"No clear boundary","text":"Standard FAQs and cases requiring judgement are not separated."}]},
+      "how":{"title":"How AI customer service works","intro":"The system uses information organised and approved by the business.","steps":[{"title":"Prepare business information","text":"Confirm FAQs, services, prices, rules and topics AI must not answer."},{"title":"Understand the enquiry","text":"Match the question to approved information or a workflow."},{"title":"Provide a relevant response","text":"Answer using business content and explain the next step."},{"title":"Continue the workflow","text":"Where applicable, move to qualification, booking or data collection."},{"title":"Hand over when needed","text":"Notify staff when the case is outside scope or needs a person."}]},
+      "benefits":{"title":"Create a more consistent customer service entry point","items":[{"title":"Timely common answers","text":"Customers can first receive approved basic information."},{"title":"More consistent responses","text":"Content uses one set of reviewed business information."},{"title":"Connected next steps","text":"Continue from an answer into qualification, booking or data collection."},{"title":"Human judgement remains","text":"Complex, sensitive and exceptional cases go to staff."}]},
+      "human":{"title":"AI customer service needs clear answer boundaries","intro":"The system should not make commitments or professional judgements that the business has not approved.","aiTitle":"AI can handle","aiItems":["Approved services and FAQs","Standard process information","Customer data and next-step guidance"],"staffTitle":"Staff should handle","staffItems":["Special pricing, refunds and complaints","Medical, legal, financial or other professional and high-risk advice","Missing information, conflicting rules or requests for a person"]},
+      "demo":{"title":"See a real FAQ response in the demo","text":"The demo shows how the system answers using business information, continues an unfinished workflow and moves to booking or staff notification when needed.","videoSrc":"/videos/faq-live-demo.mp4","videoTitle":"Real AI customer service FAQ demo"},
+      "faq":{"title":"AI customer service questions","items":[{"q":"Where does the system get its answers?","a":"Answers come from FAQs, services, prices, policies and workflow rules supplied and approved by the business."},{"q":"What happens when the information does not contain an answer?","a":"The system should say it cannot confirm, ask for more information or hand the case to staff rather than invent an answer."},{"q":"Can FAQs and service information be updated?","a":"Yes. Changes should be reviewed, updated and tested before use."},{"q":"Which languages can it support?","a":"Chinese, English and Bahasa Malaysia can be configured using approved business content and confirmed project scope."},{"q":"Can booking continue after an FAQ answer?","a":"Yes, within a configured workflow the conversation can continue into qualification, data collection or booking."},{"q":"Can staff take over at any time?","a":"Human takeover rules can let staff continue when requested or when a special case appears."},{"q":"Will it replace the whole customer service team?","a":"No. It is suited to standard repeated content while staff retain judgement, empathy, exceptions and authorised decisions."}]},
+      "cta":{"title":"See how AI customer service uses your real information","text":"Review the FAQ demo, then discuss the content scope, workflow and human takeover rules with a consultant.","primary":"Book Demo","secondary":"Contact Us"}
+    }
+  }
+}
