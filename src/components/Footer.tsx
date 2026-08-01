@@ -1,6 +1,7 @@
 import { LogIn, MessageCircle } from "lucide-react";
 import { Link } from "react-router-dom";
 import { siteConfig } from "../config/siteConfig";
+import geoContent from "../i18n/geoContent.json";
 import { v2Content } from "../i18n/v2Content";
 import { useLanguage } from "../i18n/useLanguage";
 import { createWhatsAppUrl } from "../utils/whatsapp";
@@ -9,12 +10,14 @@ import { Brand } from "./Brand";
 export function Footer() {
   const { copy, currentLanguage } = useLanguage();
   const v2 = v2Content[currentLanguage];
+  const geo = geoContent[currentLanguage].footer;
   const whatsappUrl = createWhatsAppUrl(siteConfig.whatsappNumber, copy.common.whatsappPrefill);
   const footerLinks = [
     [v2.nav.home, "/"],
     [v2.nav.demo, "/demo"],
     [v2.nav.pricing, "/#pricing"],
     [v2.nav.about, "/about"],
+    [geo.contact, "/contact"],
     [v2.nav.faq, "/#faq"],
     [copy.footer.privacy, "/privacy"],
     [copy.footer.terms, "/terms"],
@@ -26,7 +29,8 @@ export function Footer() {
         <div className="grid gap-12 lg:grid-cols-[1fr_1.3fr] lg:items-start lg:gap-16">
           <div>
             <Brand size="footer" />
-            <p className="mt-6 max-w-md text-base font-bold leading-7 text-[#111827]">{v2.footer.tagline}</p>
+            <p className="mt-6 max-w-md text-base font-bold leading-7 text-[#111827]">{geo.tagline}</p>
+            <p className="mt-3 text-sm leading-6 text-[#4B5563]">{geo.market} · {siteConfig.whatsappDisplayNumber}</p>
             {import.meta.env.DEV && <span className="mt-4 inline-flex rounded-full border border-[#BFDBFE] bg-[#EFF6FF] px-3 py-1 text-xs font-bold text-[#1D4ED8]">{v2.footer.preview}</span>}
           </div>
           <div className="lg:justify-self-end">

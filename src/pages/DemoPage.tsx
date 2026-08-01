@@ -2,6 +2,7 @@ import { ArrowRight, BellRing, CalendarCheck, FileCheck2, MessageSquareText, Mic
 import { ContactAction } from "../components/ContactAction";
 import { VideoPlayer } from "../components/Media";
 import { Seo } from "../components/Seo";
+import geoContent from "../i18n/geoContent.json";
 import { useLanguage } from "../i18n/useLanguage";
 
 const demoMedia = [
@@ -15,6 +16,7 @@ const demoMedia = [
 export function DemoPage() {
   const { currentLanguage, copy } = useLanguage();
   const content = copy.demo;
+  const geo = geoContent[currentLanguage].demo;
 
   return (
     <>
@@ -25,6 +27,14 @@ export function DemoPage() {
           <h1 className="page-title">{content.title}</h1>
           <p className="lead mt-6 max-w-3xl">{content.intro}</p>
           <p className="mt-4 max-w-3xl text-sm leading-6 text-muted">{content.platformNote}</p>
+          <p className="mt-4 max-w-3xl text-sm leading-6 text-muted">{geo.capabilitySummary}</p>
+          <div className="mt-8 max-w-3xl rounded-2xl border border-brand-100 bg-white p-5 sm:p-6">
+            <h2 className="content-title">{geo.processTitle}</h2>
+            <p className="body-copy mt-3">{geo.processIntro}</p>
+            <ol className="mt-5 grid gap-3 sm:grid-cols-2">
+              {geo.process.map((step, index) => <li key={step} className="flex items-start gap-3 text-sm font-semibold text-ink"><span className="flex size-7 shrink-0 items-center justify-center rounded-full bg-brand-600 text-xs text-white">{index + 1}</span><span className="pt-1">{step}</span></li>)}
+            </ol>
+          </div>
         </div>
       </section>
       <section>

@@ -15,12 +15,12 @@ import { VideoPlayer } from "../components/Media";
 import { PlatformTag } from "../components/PlatformTag";
 import { Seo } from "../components/Seo";
 import { platformIconByLabel } from "../config/platformIcons";
+import geoContent from "../i18n/geoContent.json";
 import { v2Content } from "../i18n/v2Content";
 import { useLanguage } from "../i18n/useLanguage";
 import { PricingSection } from "../sections/PricingSection";
 
 const outcomeIcons = [MessageSquareText, CalendarCheck, RefreshCcw];
-const visibleFaqIndexes = [0, 1, 5, 2, 8];
 
 function SectionHead({ eyebrow, title, intro, center = false }: { eyebrow: string; title: string; intro?: string; center?: boolean }) {
   return (
@@ -56,9 +56,8 @@ function FaqItem({ question, answer, index }: { question: string; answer: string
 export function HomePage() {
   const { currentLanguage, copy } = useLanguage();
   const content = v2Content[currentLanguage];
+  const geo = geoContent[currentLanguage];
   const faqItems = copy.home.faq.items;
-  const visibleFaqs = visibleFaqIndexes.map((index) => ({ ...faqItems[index], sourceIndex: index })).filter((item) => item.q);
-  const additionalFaqs = faqItems.map((item, index) => ({ ...item, sourceIndex: index })).filter((_, index) => !visibleFaqIndexes.includes(index));
 
   return (
     <>
@@ -101,7 +100,7 @@ export function HomePage() {
 
       <section id="how-it-works" className="section home-section-light-tint">
         <div className="container-site">
-          <SectionHead eyebrow={content.outcomes.eyebrow} title={content.outcomes.title} center />
+          <SectionHead eyebrow={content.outcomes.eyebrow} title={content.outcomes.title} intro={geo.home.brandSummary} center />
           <div className="flow-grid grid gap-5 md:grid-cols-3">
             {content.outcomes.items.map((item, index) => {
               const Icon = outcomeIcons[index];
@@ -231,13 +230,15 @@ export function HomePage() {
         <div className="container-site grid gap-10 lg:grid-cols-[.55fr_1fr] lg:gap-14">
           <div><span className="eyebrow">{copy.home.faq.eyebrow}</span><h2 className="section-title">{copy.home.faq.title}</h2><p className="lead mt-5">{copy.home.faq.intro}</p></div>
           <div>
-            {visibleFaqs.map((item) => <FaqItem key={item.q} question={item.q} answer={item.a} index={item.sourceIndex} />)}
-            {additionalFaqs.length > 0 && (
+            <h3 className="content-title mb-2">{geo.home.qaTitle}</h3>
+            <p className="mb-5 text-sm leading-6 text-muted">{geo.home.qaIntro}</p>
+            {geo.home.qa.map((item, index) => <FaqItem key={item.q} question={item.q} answer={item.a} index={index} />)}
+            {faqItems.length > 0 && (
               <details className="group mt-5 rounded-2xl border border-brand-100 bg-white p-5">
                 <summary className="flex cursor-pointer list-none items-center justify-between gap-4 font-bold text-brand-700 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-brand-100">
                   {content.faq.more}<ChevronDown className="shrink-0 transition group-open:rotate-180" aria-hidden="true" />
                 </summary>
-                <div className="mt-4">{additionalFaqs.map((item) => <FaqItem key={item.q} question={item.q} answer={item.a} index={item.sourceIndex + 100} />)}</div>
+                <div className="mt-4">{faqItems.map((item, index) => <FaqItem key={item.q} question={item.q} answer={item.a} index={index + 100} />)}</div>
               </details>
             )}
           </div>

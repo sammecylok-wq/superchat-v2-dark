@@ -1,0 +1,86 @@
+{
+  "zh": {
+    "home": {
+      "brandSummary": "SuperChat Marketing 是面向马来西亚企业的 AI 自动化平台与实施服务，帮助企业处理 WhatsApp 客服、客户筛选、预约、自动跟进，并在需要时让员工接手对话。",
+      "qaTitle": "关于 SuperChat Marketing",
+      "qaIntro": "以下是企业在评估 SuperChat 前最常提出的问题。",
+      "qa": [
+        { "q": "SuperChat Marketing 能做什么？", "a": "SuperChat 可根据企业确认的资料与业务规则，处理常见客户问题、筛选潜在客户、收集预约资料、继续跟进，并在需要人工判断时通知员工接手。" },
+        { "q": "SuperChat Marketing 适合哪些企业？", "a": "它适合主要通过 WhatsApp、Facebook 或 Instagram 接收咨询，并希望提升回复一致性与跟进效率的马来西亚服务型、中小型及预约制企业。" },
+        { "q": "SuperChat 可以自动处理 WhatsApp 客服吗？", "a": "可以。系统会依据企业批准的 FAQ、服务、价格和流程规则回复；超出设定范围或需要判断的情况可以转交员工。" },
+        { "q": "员工可以接手 AI 对话吗？", "a": "可以。企业可设定人工接手条件，系统在客户提出真人请求或遇到特殊情况时通知负责人，由员工继续对话。" },
+        { "q": "系统支持中文、英文和 Bahasa Malaysia 吗？", "a": "支持。SuperChat 可依据企业提供并确认的内容，以中文、英文和 Bahasa Malaysia 处理客户沟通。" },
+        { "q": "SuperChat 可以连接预约、CRM 和企业工作流程吗？", "a": "可以按项目范围连接预约流程、Google Calendar、Google Sheets、CRM 记录、负责人通知及其他获准的 API；实际连接取决于企业账号、平台权限和业务规则。" },
+        { "q": "企业如何开始使用 SuperChat？", "a": "企业可先预约线上或面对面 Demo。团队会了解现有客户沟通流程，再确认适合的自动化范围、所需连接与实施时间。" }
+      ]
+    },
+    "about": {
+      "entitySummary": "SuperChat Marketing 是服务马来西亚企业的 AI 客户沟通自动化品牌与实施团队。",
+      "mission": "我们的目标是把 WhatsApp 等客户入口连接到企业真实的客服、筛选、预约、跟进和人工接手流程，而不是只提供一个通用聊天机器人。",
+      "marketLanguages": "服务以马来西亚市场为主，可按企业确认的内容支持中文、英文与 Bahasa Malaysia。企业员工仍可在需要时接手和控制客户对话。"
+    },
+    "demo": {
+      "capabilitySummary": "这些真实 Demo 展示 SuperChat 如何处理 FAQ、客户需求筛选、预约资料、语音消息理解与负责人通知。实际实施内容会依据企业资料、平台权限和业务规则配置。",
+      "processTitle": "SuperChat Demo 会进行什么？",
+      "processIntro": "Demo 会围绕企业当前的客户沟通方式，确认可行的自动化范围。",
+      "process": [
+        "了解目前使用的客户沟通渠道与常见问题",
+        "查看 SuperChat 的真实对话与流程示范",
+        "讨论客户筛选、预约、跟进和人工接手规则",
+        "确认可连接的平台、CRM 或企业工作流程",
+        "整理适合的实施范围与下一步"
+      ]
+    },
+    "contact": {
+      "serviceIntro": "联系 SuperChat Marketing，可预约线上或面对面 Demo，并讨论适合企业的 WhatsApp 客服、客户筛选、预约、跟进与系统连接方案。",
+      "marketLanguages": "我们主要服务马来西亚企业，可使用中文、英文或 Bahasa Malaysia 沟通。WhatsApp 顾问号码：+60 11-6120 7960。"
+    },
+    "footer": {
+      "tagline": "为马来西亚企业提供 AI WhatsApp 客服、客户筛选、预约、跟进与人工接手自动化。",
+      "contact": "联系我们",
+      "market": "Malaysia"
+    }
+  },
+  "en": {
+    "home": {
+      "brandSummary": "SuperChat Marketing is a Malaysia-focused AI automation platform and implementation service that helps businesses manage WhatsApp customer service, lead qualification, appointment booking, follow-up and human takeover.",
+      "qaTitle": "About SuperChat Marketing",
+      "qaIntro": "Direct answers to common questions businesses ask when evaluating SuperChat.",
+      "qa": [
+        { "q": "What does SuperChat Marketing do?", "a": "SuperChat uses business-approved information and workflow rules to answer common enquiries, qualify leads, collect booking details, continue follow-up and notify staff when human judgement is needed." },
+        { "q": "Who is SuperChat Marketing for?", "a": "It is designed for Malaysian service, small and medium-sized, and appointment-based businesses that receive enquiries through WhatsApp, Facebook or Instagram and want more consistent responses and follow-up." },
+        { "q": "Can SuperChat automate WhatsApp customer service?", "a": "Yes. It can respond using approved FAQs, services, prices and process rules. Enquiries outside the configured scope or requiring judgement can be handed to staff." },
+        { "q": "Can staff take over an AI conversation?", "a": "Yes. Businesses can define takeover conditions so staff are notified when a customer asks for a person or when a special case needs human handling." },
+        { "q": "Does the system support Chinese, English and Bahasa Malaysia?", "a": "Yes. SuperChat can communicate in Chinese, English and Bahasa Malaysia using content reviewed and approved by the business." },
+        { "q": "Can SuperChat connect booking, CRM and business workflows?", "a": "Depending on project scope, it can connect booking flows, Google Calendar, Google Sheets, CRM records, staff notifications and other approved APIs. Availability depends on business accounts, platform permissions and workflow rules." },
+        { "q": "How does a business get started with SuperChat?", "a": "Book an online or in-person demo. The team will review the current customer communication flow, then confirm the suitable automation scope, required connections and implementation timeline." }
+      ]
+    },
+    "about": {
+      "entitySummary": "SuperChat Marketing is an AI customer communication automation brand and implementation team serving Malaysian businesses.",
+      "mission": "Our goal is to connect customer channels such as WhatsApp with real customer service, qualification, booking, follow-up and human takeover workflows—not merely provide a generic chatbot.",
+      "marketLanguages": "The service focuses on Malaysia and can support Chinese, English and Bahasa Malaysia using business-approved content. Staff retain control and can take over customer conversations when needed."
+    },
+    "demo": {
+      "capabilitySummary": "These real demos show how SuperChat handles FAQs, lead qualification, booking details, voice message understanding and staff notifications. Each implementation is configured around the business's information, platform permissions and workflow rules.",
+      "processTitle": "What happens during a SuperChat Demo?",
+      "processIntro": "The demo reviews the business's current customer communication process and identifies a practical automation scope.",
+      "process": [
+        "Review current customer channels and common enquiries",
+        "See real SuperChat conversations and workflow demonstrations",
+        "Discuss qualification, booking, follow-up and human takeover rules",
+        "Confirm possible platform, CRM and business workflow connections",
+        "Outline a suitable implementation scope and next steps"
+      ]
+    },
+    "contact": {
+      "serviceIntro": "Contact SuperChat Marketing to arrange an online or in-person demo and discuss WhatsApp customer service, lead qualification, booking, follow-up and system connections for your business.",
+      "marketLanguages": "We primarily serve Malaysian businesses and can communicate in Chinese, English or Bahasa Malaysia. WhatsApp consultant: +60 11-6120 7960."
+    },
+    "footer": {
+      "tagline": "AI WhatsApp customer service, lead qualification, booking, follow-up and human takeover automation for Malaysian businesses.",
+      "contact": "Contact",
+      "market": "Malaysia"
+    }
+  }
+}
