@@ -16,6 +16,7 @@ import { PlatformTag } from "../components/PlatformTag";
 import { Seo } from "../components/Seo";
 import { platformIconByLabel } from "../config/platformIcons";
 import geoContent from "../i18n/geoContent.json";
+import solutionContent from "../i18n/solutionContent.json";
 import { v2Content } from "../i18n/v2Content";
 import { useLanguage } from "../i18n/useLanguage";
 import { PricingSection } from "../sections/PricingSection";
@@ -113,6 +114,9 @@ export function HomePage() {
               );
             })}
           </div>
+          <nav aria-label={currentLanguage === "zh" ? "解决方案" : "Solutions"} className="mx-auto mt-8 flex max-w-4xl flex-wrap justify-center gap-3">
+            {Object.values(solutionContent[currentLanguage]).map((solution) => <Link key={solution.path} to={solution.path} className="rounded-full border border-brand-100 bg-white px-4 py-2 text-sm font-semibold text-brand-700 transition hover:border-brand-500 hover:bg-brand-50 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-brand-100">{solution.navLabel}</Link>)}
+          </nav>
         </div>
       </section>
 

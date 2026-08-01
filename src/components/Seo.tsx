@@ -2,7 +2,8 @@ import { useEffect } from "react";
 import { siteConfig } from "../config/siteConfig";
 import { useLanguage } from "../i18n/useLanguage";
 
-type Props = { title: string; description: string; keywords?: string; path?: string; noindex?: boolean };
+type ServiceData = { name: string; description: string; path: string };
+type Props = { title: string; description: string; keywords?: string; path?: string; noindex?: boolean; service?: ServiceData };
 
 function setMeta(selector: string, attrs: Record<string, string>) {
   let element = document.head.querySelector<HTMLMetaElement>(selector);
@@ -13,7 +14,7 @@ function setMeta(selector: string, attrs: Record<string, string>) {
   Object.entries(attrs).forEach(([key, value]) => element?.setAttribute(key, value));
 }
 
-export function Seo({ title, description, keywords, path = "/", noindex = false }: Props) {
+export function Seo({ title, description, keywords, path = "/", noindex = false, service }: Props) {
   const { currentLanguage } = useLanguage();
 
   useEffect(() => {
@@ -52,7 +53,7 @@ export function Seo({ title, description, keywords, path = "/", noindex = false 
     }
     canonical.href = canonicalUrl;
 
-    const structuredData = path === "/"
+    const structuredData: Array<{ id: string; value: Record<string, unknown> }> = path === "/"
       ? [
           {
             id: "organization-structured-data",
@@ -100,7 +101,53 @@ export function Seo({ title, description, keywords, path = "/", noindex = false 
             },
           },
         ]
-      : [];
+      : service
+        ? [
+            {
+              id: "organization-structured-data",
+              value: {
+                "@context": "https://schema.org",
+                "@type": "Organization",
+                "@id": `${siteConfig.domain}/#organization`,
+                name: siteConfig.brandName,
+                url: `${siteConfig.domain}/`,
+                logo: imageUrl,
+                telephone: `+${siteConfig.whatsappNumber}`,
+                areaServed: { "@type": "Country", name: "Malaysia" },
+                knowsLanguage: ["en-MY", "zh", "ms-MY"],
+              },
+            },
+            {
+              id: "website-structured-data",
+              value: {
+                "@context": "https://schema.org",
+                "@type": "WebSite",
+                "@id": `${siteConfig.domain}/#website`,
+                name: siteConfig.brandName,
+                url: `${siteConfig.domain}/`,
+                inLanguage: ["en-MY", "zh"],
+              },
+            },
+            {
+            id: "service-structured-data",
+            value: {
+              "@context": "https://schema.org",
+              "@type": "Service",
+              "@id": `${siteConfig.domain}${service.path}#service`,
+              name: service.name,
+              description: service.description,
+              serviceType: service.name,
+              url: `${siteConfig.domain}${service.path}`,
+              provider: { "@type": "Organization", "@id": `${siteConfig.domain}/#organization`, name: siteConfig.brandName },
+              areaServed: { "@type": "Country", name: "Malaysia" },
+              availableChannel: {
+                "@type": "ServiceChannel",
+                serviceUrl: `${siteConfig.domain}/contact`,
+                availableLanguage: ["Chinese", "English", "Malay"],
+              },
+            },
+          }]
+        : [];
 
     ["organization-structured-data", "website-structured-data", "service-structured-data"].forEach((id) => {
       const existing = document.getElementById(id);
@@ -115,6 +162,6 @@ export function Seo({ title, description, keywords, path = "/", noindex = false 
       script.textContent = JSON.stringify(entry.value);
       if (!existing) document.head.append(script);
     });
-  }, [currentLanguage, title, description, keywords, path, noindex]);
+  }, [currentLanguage, title, description, keywords, path, noindex, service]);
   return null;
 }
