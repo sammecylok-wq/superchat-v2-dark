@@ -6,6 +6,7 @@ const projectRoot = dirname(dirname(fileURLToPath(import.meta.url)));
 const distRoot = join(projectRoot, "dist");
 const indexPath = join(distRoot, "index.html");
 const template = await readFile(indexPath, "utf8");
+const geoContent = JSON.parse(await readFile(join(projectRoot, "src", "i18n", "geoContent.json"), "utf8"));
 
 const domain = "https://superchatmarketing.com";
 const image = `${domain}/images/logo/superchat-logo.png`;
@@ -17,24 +18,28 @@ const pages = [
     description: "SuperChat Marketing 帮助马来西亚企业通过 AI 自动处理 WhatsApp 客服、客户筛选、预约、跟进和人工介入。",
     h1: "为马来西亚企业打造的 AI WhatsApp 自动化",
     keepStructuredData: true,
+    geoKey: "home",
   },
   {
     path: "/demo",
     title: "AI WhatsApp 系统 Demo（马来西亚）| SuperChat Marketing",
     description: "观看 SuperChat Marketing 的真实 AI WhatsApp 自动化 Demo，了解 FAQ 回复、客户筛选、预约、语音消息与负责人通知流程。",
     h1: "真实系统 Demo",
+    geoKey: "demo",
   },
   {
     path: "/about",
     title: "关于我们 | 马来西亚 AI WhatsApp 自动化 | SuperChat Marketing",
     description: "了解 SuperChat Marketing 如何为马来西亚企业建立实用的 AI WhatsApp 客服、客户筛选、预约与跟进自动化系统。",
     h1: "关于 SuperChat Marketing",
+    geoKey: "about",
   },
   {
     path: "/contact",
     title: "预约 AI WhatsApp 自动化 Demo | SuperChat Marketing",
     description: "联系 SuperChat Marketing 顾问，预约适合马来西亚企业的 AI WhatsApp 客服与业务自动化系统 Demo。",
     h1: "预约 SuperChat Demo",
+    geoKey: "contact",
   },
   {
     path: "/privacy",
@@ -71,6 +76,26 @@ function replaceRequired(html, pattern, replacement, label) {
   return html.replace(pattern, replacement);
 }
 
+function renderGeoContent(page) {
+  if (!page.geoKey) return "";
+  const content = geoContent.zh[page.geoKey];
+  if (page.geoKey === "home") {
+    const questions = content.qa.map((item) => `<article><h3>${escapeHtml(item.q)}</h3><p>${escapeHtml(item.a)}</p></article>`).join("");
+    return `<section><h2>${escapeHtml(content.qaTitle)}</h2><p>${escapeHtml(content.brandSummary)}</p><p>${escapeHtml(content.qaIntro)}</p>${questions}</section>`;
+  }
+  if (page.geoKey === "about") {
+    return `<section><h2>SuperChat Marketing</h2><p>${escapeHtml(content.entitySummary)}</p><p>${escapeHtml(content.mission)}</p><p>${escapeHtml(content.marketLanguages)}</p></section>`;
+  }
+  if (page.geoKey === "demo") {
+    const steps = content.process.map((step) => `<li>${escapeHtml(step)}</li>`).join("");
+    return `<section><p>${escapeHtml(content.capabilitySummary)}</p><h2>${escapeHtml(content.processTitle)}</h2><p>${escapeHtml(content.processIntro)}</p><ol>${steps}</ol></section>`;
+  }
+  if (page.geoKey === "contact") {
+    return `<section><h2>联系 SuperChat Marketing</h2><p>${escapeHtml(content.serviceIntro)}</p><p>${escapeHtml(content.marketLanguages)}</p></section>`;
+  }
+  return "";
+}
+
 function renderPage(page) {
   const canonical = `${domain}${page.path === "/" ? "/" : page.path}`;
   const title = escapeHtml(page.title);
@@ -92,10 +117,10 @@ function renderPage(page) {
   html = replaceRequired(html, /<meta name="twitter:image" content="[^"]*"\s*\/>/, `<meta name="twitter:image" content="${image}" />`, "twitter:image");
 
   if (!page.keepStructuredData) {
-    html = html.replace(/\s*<script id="(?:organization|website)-structured-data" type="application\/ld\+json">[\s\S]*?<\/script>/g, "");
+    html = html.replace(/\s*<script id="(?:organization|website|service)-structured-data" type="application\/ld\+json">[\s\S]*?<\/script>/g, "");
   }
 
-  const fallback = `<noscript><main><h1>${h1}</h1><p>${description}</p></main></noscript>`;
+  const fallback = `<noscript><main><h1>${h1}</h1><p>${description}</p>${renderGeoContent(page)}</main></noscript>`;
   html = replaceRequired(html, /<div id="root"><\/div>/, `<div id="root">${fallback}</div>`, "root fallback");
 
   const titleCount = (html.match(/<title>/g) || []).length;

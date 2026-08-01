@@ -2,13 +2,15 @@ import { ArrowRight, BrainCircuit, HeartHandshake, MessagesSquare, ShieldCheck, 
 import { Brand } from "../components/Brand";
 import { ContactAction } from "../components/ContactAction";
 import { Seo } from "../components/Seo";
+import geoContent from "../i18n/geoContent.json";
 import { useLanguage } from "../i18n/useLanguage";
 
 const beliefIcons = [HeartHandshake, TestTube2, ShieldCheck, BrainCircuit, MessagesSquare];
 
 export function AboutPage() {
-  const { copy } = useLanguage();
+  const { copy, currentLanguage } = useLanguage();
   const content = copy.about;
+  const geo = geoContent[currentLanguage].about;
 
   return (
     <>
@@ -21,7 +23,9 @@ export function AboutPage() {
             <h1 className="page-title">{content.title}</h1>
             <p className="mt-7 text-xl font-semibold leading-8 text-ink">{content.coreTitle}</p>
             <p className="lead mt-4">{content.coreText}</p>
-            <p className="lead mt-4">{content.servicePositioning}</p>
+            <p className="lead mt-4">{geo.entitySummary}</p>
+            <p className="body-copy mt-4">{geo.mission}</p>
+            <p className="body-copy mt-4">{geo.marketLanguages}</p>
           </div>
           <img src="/images/founder/founder-portrait.jpeg" alt={content.founderAlt} width="720" height="1080" loading="lazy" decoding="async" className="aspect-[2/3] w-full max-w-md justify-self-center rounded-3xl border border-brand-100 object-cover object-[center_18%] shadow-soft sm:aspect-[3/4]" />
         </div>

@@ -2,6 +2,7 @@ import { FormEvent, useMemo, useState } from "react";
 import { CalendarDays, Copy, Mail, MapPin, MessageCircle, MonitorPlay } from "lucide-react";
 import { Seo } from "../components/Seo";
 import { siteConfig } from "../config/siteConfig";
+import geoContent from "../i18n/geoContent.json";
 import { useLanguage } from "../i18n/useLanguage";
 import { createWhatsAppUrl } from "../utils/whatsapp";
 
@@ -15,8 +16,9 @@ function validWhatsApp(value: string) {
 }
 
 export function ContactPage() {
-  const { copy } = useLanguage();
+  const { copy, currentLanguage } = useLanguage();
   const content = copy.contact;
+  const geo = geoContent[currentLanguage].contact;
   const [form, setForm] = useState(initialForm);
   const [errors, setErrors] = useState<Partial<Record<RequiredField, true>>>({});
   const [prepared, setPrepared] = useState(false);
@@ -66,6 +68,8 @@ export function ContactPage() {
           <span className="eyebrow !bg-white">{content.eyebrow}</span>
           <h1 className="page-title">{content.title}</h1>
           <p className="lead mt-6 max-w-2xl">{content.intro}</p>
+          <p className="mt-4 max-w-3xl text-sm leading-6 text-muted">{geo.serviceIntro}</p>
+          <p className="mt-2 max-w-3xl text-sm leading-6 text-muted">{geo.marketLanguages}</p>
         </div>
       </section>
       <section className="section">

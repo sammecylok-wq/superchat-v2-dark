@@ -59,12 +59,13 @@ export function Seo({ title, description, keywords, path = "/", noindex = false 
             value: {
               "@context": "https://schema.org",
               "@type": "Organization",
+              "@id": `${siteConfig.domain}/#organization`,
               name: siteConfig.brandName,
               url: `${siteConfig.domain}/`,
               logo: imageUrl,
               telephone: `+${siteConfig.whatsappNumber}`,
               areaServed: { "@type": "Country", name: "Malaysia" },
-              knowsLanguage: ["en-MY", "zh"],
+              knowsLanguage: ["en-MY", "zh", "ms-MY"],
             },
           },
           {
@@ -72,15 +73,36 @@ export function Seo({ title, description, keywords, path = "/", noindex = false 
             value: {
               "@context": "https://schema.org",
               "@type": "WebSite",
+              "@id": `${siteConfig.domain}/#website`,
               name: siteConfig.brandName,
               url: `${siteConfig.domain}/`,
               inLanguage: ["en-MY", "zh"],
             },
           },
+          {
+            id: "service-structured-data",
+            value: {
+              "@context": "https://schema.org",
+              "@type": "Service",
+              "@id": `${siteConfig.domain}/#service`,
+              name: "AI WhatsApp Automation for Malaysian Businesses",
+              serviceType: "AI-powered customer communication automation",
+              description: "AI-powered customer communication automation for WhatsApp enquiries, lead qualification, appointment booking, follow-up and human takeover.",
+              url: `${siteConfig.domain}/`,
+              provider: { "@type": "Organization", "@id": `${siteConfig.domain}/#organization`, name: siteConfig.brandName },
+              areaServed: { "@type": "Country", name: "Malaysia" },
+              audience: { "@type": "BusinessAudience", audienceType: "Malaysian businesses" },
+              availableChannel: {
+                "@type": "ServiceChannel",
+                serviceUrl: `${siteConfig.domain}/contact`,
+                availableLanguage: ["Chinese", "English", "Malay"],
+              },
+            },
+          },
         ]
       : [];
 
-    ["organization-structured-data", "website-structured-data"].forEach((id) => {
+    ["organization-structured-data", "website-structured-data", "service-structured-data"].forEach((id) => {
       const existing = document.getElementById(id);
       const entry = structuredData.find((item) => item.id === id);
       if (!entry) {
