@@ -10,7 +10,7 @@ export const v2Content = {
     },
     hero: {
       eyebrow: "专人服务｜定制化多平台 AI 客服",
-      title: ["每个客户消息都有人接，", "不会漏、不会乱、不会断。"],
+      title: ["为马来西亚企业打造的", "AI WhatsApp 自动化"],
       body: "SuperChat 根据你真实的服务、价格、FAQ 和业务流程，自动回复、筛选、预约，并在需要时交给真人。",
       primary: "看真实 Demo",
       secondary: "联系顾问",
@@ -122,7 +122,7 @@ export const v2Content = {
     },
     hero: {
       eyebrow: "Dedicated Support | Custom Multi-Platform AI Customer Service",
-      title: ["Every customer message gets handled—", "without being missed, confused or abandoned."],
+      title: ["AI WhatsApp Automation", "for Malaysian Businesses"],
       body: "SuperChat uses your real services, pricing, FAQs and business rules to reply, qualify, book and hand conversations to a person when needed.",
       primary: "Watch a Live Demo",
       secondary: "Talk to a Consultant",
