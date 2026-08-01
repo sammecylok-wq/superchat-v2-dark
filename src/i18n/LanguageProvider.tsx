@@ -57,7 +57,7 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
 
   useEffect(() => {
     window.localStorage.setItem(languageStorageKey, currentLanguage);
-    document.documentElement.lang = currentLanguage === "zh" ? "zh-CN" : "en";
+    document.documentElement.lang = currentLanguage === "zh" ? "zh" : "en-MY";
   }, [currentLanguage]);
 
   const copy = translations[currentLanguage];

@@ -62,21 +62,21 @@ export const translations = {
     },
     seo: {
       home: {
-        title: "SuperChat Marketing | Multi-Platform AI Customer Service & Automation Malaysia",
-        description: "Custom AI customer service, lead qualification, booking, notifications and business automation across WhatsApp, Facebook, Instagram and other supported platforms in Malaysia.",
+        title: "马来西亚 AI WhatsApp 自动化 | SuperChat Marketing",
+        description: "SuperChat Marketing 帮助马来西亚企业通过 AI 自动处理 WhatsApp 客服、客户筛选、预约、跟进和人工介入。",
         keywords: ["WhatsApp AI Malaysia", "WhatsApp chatbot for beauty salon", "beauty salon automation Malaysia", "AI booking chatbot Malaysia", "AI customer service Malaysia", "multi-platform chatbot Malaysia", "omnichannel customer service Malaysia", "Facebook Messenger automation Malaysia", "Instagram DM automation Malaysia", "customer service automation Malaysia", "appointment automation Malaysia"],
       },
       demo: {
-        title: "真实系统 Demo｜SuperChat Marketing",
-        description: "查看 SuperChat WhatsApp AI 怎样处理 FAQ、预约、语音与负责人即时通知。",
+        title: "AI WhatsApp 系统 Demo（马来西亚）| SuperChat Marketing",
+        description: "观看 SuperChat Marketing 的真实 AI WhatsApp 自动化 Demo，了解 FAQ 回复、客户筛选、预约、语音消息与负责人通知流程。",
       },
       about: {
-        title: "关于 SuperChat Marketing",
-        description: "了解 SuperChat Marketing、Founder 颜皓乐，以及我们怎样为马来西亚服务型企业建立多平台 AI 客服与业务自动化系统。",
+        title: "关于我们 | 马来西亚 AI WhatsApp 自动化 | SuperChat Marketing",
+        description: "了解 SuperChat Marketing 如何为马来西亚企业建立实用的 AI WhatsApp 客服、客户筛选、预约与跟进自动化系统。",
       },
       contact: {
-        title: "预约 SuperChat Demo",
-        description: "预约 SuperChat WhatsApp AI 线上或免费线下 Demo。",
+        title: "预约 AI WhatsApp 自动化 Demo | SuperChat Marketing",
+        description: "联系 SuperChat Marketing 顾问，预约适合马来西亚企业的 AI WhatsApp 客服与业务自动化系统 Demo。",
       },
       privacy: {
         title: "隐私政策｜SuperChat Marketing",
@@ -567,21 +567,21 @@ export const translations = {
     },
     seo: {
       home: {
-        title: "SuperChat Marketing | Multi-Platform AI Customer Service & Automation Malaysia",
-        description: "Custom AI customer service, lead qualification, booking, notifications and business automation across WhatsApp, Facebook, Instagram and other supported platforms in Malaysia.",
+        title: "AI WhatsApp Automation Malaysia | SuperChat Marketing",
+        description: "SuperChat Marketing helps Malaysian businesses automate WhatsApp customer service, lead qualification, appointment booking, follow-up and human takeover with AI.",
         keywords: ["WhatsApp AI Malaysia", "WhatsApp chatbot for beauty salon", "beauty salon automation Malaysia", "AI booking chatbot Malaysia", "AI customer service Malaysia", "multi-platform chatbot Malaysia", "omnichannel customer service Malaysia", "Facebook Messenger automation Malaysia", "Instagram DM automation Malaysia", "customer service automation Malaysia", "appointment automation Malaysia"],
       },
       demo: {
-        title: "Live System Demos | SuperChat Marketing",
-        description: "See how SuperChat handles real FAQs, booking, voice messages and instant person-in-charge notifications.",
+        title: "AI WhatsApp Automation Demos Malaysia | SuperChat Marketing",
+        description: "Watch real SuperChat AI WhatsApp automation demos for FAQ replies, lead qualification, bookings, voice messages and person-in-charge notifications.",
       },
       about: {
-        title: "About SuperChat Marketing",
-        description: "Learn how SuperChat Marketing builds practical multi-platform AI customer service and business automation systems around real Malaysian businesses.",
+        title: "About Our AI WhatsApp Automation | SuperChat Marketing",
+        description: "Learn how SuperChat Marketing builds practical AI WhatsApp customer service, lead qualification, booking and follow-up systems for Malaysian businesses.",
       },
       contact: {
-        title: "Book a SuperChat Demo",
-        description: "Book an online or free in-person demonstration of the SuperChat WhatsApp AI system.",
+        title: "Book an AI WhatsApp Automation Demo | SuperChat Marketing",
+        description: "Contact SuperChat Marketing to book an AI WhatsApp customer service and business automation demo for your Malaysian business.",
       },
       privacy: {
         title: "Privacy Policy | SuperChat Marketing",
