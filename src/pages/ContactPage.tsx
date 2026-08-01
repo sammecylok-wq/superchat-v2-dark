@@ -79,6 +79,10 @@ export function ContactPage() {
                 return <div key={method.label} className="flex gap-4 rounded-xl border border-zinc-200 p-4"><span className="icon-tile"><Icon size={20} aria-hidden="true" /></span><div><h3 className="card-title">{method.label}</h3><p className="mt-1 text-sm text-muted">{value}</p></div></div>;
               })}
             </div>
+            <div className="mt-7 space-y-1 text-sm leading-6 text-muted">
+              <p><span className="font-semibold text-ink">Brand:</span> SuperChat Marketing</p>
+              <p><span className="font-semibold text-ink">Registered Business:</span> HAOS BROTHER MOBILITY</p>
+            </div>
           </aside>
           <div className="rounded-2xl border border-zinc-200 bg-zinc-50 p-6 sm:p-8">
             <h2 className="content-title">{content.formTitle}</h2>

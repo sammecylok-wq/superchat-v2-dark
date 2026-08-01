@@ -5,6 +5,9 @@ function LegalPage({ type }: { type: "privacy" | "terms" }) {
   const { copy } = useLanguage();
   const content = copy[type];
   const seo = copy.seo[type];
+  const businessStatement = type === "privacy"
+    ? "SuperChat Marketing is a brand operated by HAOS BROTHER MOBILITY, a business registered in Malaysia."
+    : "These services are provided by HAOS BROTHER MOBILITY under the SuperChat Marketing brand.";
 
   return (
     <>
@@ -19,6 +22,7 @@ function LegalPage({ type }: { type: "privacy" | "terms" }) {
       <section className="section">
         <div className="container-site max-w-4xl">
           <div className="mb-10 rounded-2xl border border-amber-200 bg-amber-50 p-5 text-sm leading-6 text-amber-950">{content.notice}</div>
+          <p className="body-pretty mb-10">{businessStatement}</p>
           <div className="space-y-10">
             {content.sections.map((section, index) => (
               <section key={section.title} aria-labelledby={`${type}-${index}`}>

@@ -41,6 +41,7 @@ export function Footer() {
         </div>
         <div className="mt-12 border-t border-[#E5E7EB] pt-6 text-xs leading-5 text-[#6B7280]">
           <p>© {new Date().getFullYear()} {copy.footer.rights}</p>
+          <p className="mt-1">SuperChat Marketing is operated by HAOS BROTHER MOBILITY.</p>
         </div>
       </div>
     </footer>
